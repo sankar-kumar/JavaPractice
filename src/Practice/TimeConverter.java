@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class TimeConverter {
 	public static void main(String[] args) {
 
+		//https://www.hackerrank.com/challenges/time-conversion/problem
 		// Input get 12:00:00AM in this format. Convert time from 12 hour to 24 hour
 		// time Zone.
 		// remember 12 AM is 00 in 24 hr. 12PM is 12 only.hope below code will be helpfull to understand better.
