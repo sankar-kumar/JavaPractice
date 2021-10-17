@@ -9,7 +9,7 @@ public class MatrixDiagonalDiff {
 		// find difference between left diagonal and right diagonal
 		// Need to work on this!!!
 		Scanner sc = new Scanner(System.in);
-		int len = 3, d1 = 0, d2 = 0;
+		int len = 3, d1 = 0, d2 = 0, result;
 		int ar[][] = new int[len][len];
 		for (int i = 0; i < len; i++) {
 			for (int j = 0; j < len; j++) {
@@ -21,15 +21,18 @@ public class MatrixDiagonalDiff {
 		}
 
 		for (int k = 0; k < len; k++) {
-			for (int l = len - k - 1; l >= 0; l--) {
+			for (int l = len - k - 1; l >= 0;) {
 				d2 += ar[k][l];
 				break;
 			}
 		}
 		sc.close();
-		
-		System.out.print(Math.abs(d1-d2));
-//		System.out.print(d2);
+		if (d1 > d2) {
+			result = d1 - d2;
+		} else {
+			result = d2 - d1;
+		}
+		System.out.println(result);
 	}
 
 }
