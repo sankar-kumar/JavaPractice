@@ -1,8 +1,8 @@
-package lambdaPractice;
+package java8practice;
 
 // Diff between using anonymous class and lambda expression. its a basic example
 //Without anonymous class
-public class BasicWorking {
+public class BasicWorkingLambda {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,7 +19,7 @@ interface Citrusfruits {
 
 //With anonymous class
 /*
- * public class BasicWorking { public static void main(String[] args) {
+ * public class BasicWorkingLambda { public static void main(String[] args) {
  * Citrusfruits cit = new Citrusfruits() { public int totalCitrusFruits(int
  * lemonCount, int orangeCount) { return (lemonCount + orangeCount); } };
  * System.out.println(cit.totalCitrusFruits(5, 10)); } }

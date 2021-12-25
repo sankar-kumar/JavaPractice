@@ -9,7 +9,12 @@ import java.util.stream.Collectors;
 //@SuppressWarnings("deprecation")
 public class MainMain {
 
-	public static void main(String[] args) {
+	int a=10;
+	static {
+		int a=100;
+	}
+	
+	public static void main(String[] args) {   
 		/*
 		 * int r = 0, c = 0, num, b; Scanner sl = new Scanner(System.in);
 		 * System.out.println("Enter a number"); num = sl.nextInt(); b = num; while (num
@@ -23,6 +28,9 @@ public class MainMain {
 		Map<String, Long> charCount = word.codePoints().mapToObj(Character::toString)
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(charCount);
+		
+		MainMain a=new MainMain();
+		System.out.println(a.a);
 		 
 
 		// Really a useful way dont delete it.
