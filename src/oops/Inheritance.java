@@ -1,6 +1,7 @@
 package oops;
 
-@FunctionalInterface
+@FunctionalInterface 
+ 
 interface Methods {
 	void print();
 
@@ -8,6 +9,8 @@ interface Methods {
 		System.out.println(s);
 		return s;
 	}
+	
+//	String badBoy(String as);
 }
 
 class Parent implements Methods {
