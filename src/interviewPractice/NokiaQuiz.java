@@ -23,7 +23,7 @@ public class NokiaQuiz {
 		input.put("OperatingChannel.5.1.1", "6");
 		input.put("OperatingChannel.5.2.1", "52");
 		
-		List<String> inpStr=Arrays.asList("SSID","BSSID","Operation","Operation","BSSID","");
+		List<String> inpStr=Arrays.asList("SSID","BSSID","Operation","Operation","BSSID","Sankar");
 
 		System.out.println(input.keySet().stream()
 				.filter(key -> key.startsWith("SSID") || key.startsWith("BSSID") || key.startsWith("OperatingChannel"))
